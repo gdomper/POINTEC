@@ -38,13 +38,12 @@
 </head>
 <body class="bg-white">
 
-    <!-- Header con Logo -->
+    <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="block">
-                <!-- Logo Apaisado Integrado -->
-                <img src="POINTEC APAISADO verde.png" alt="Logo de Pointec" class="h-12 w-auto">
-            </a>
+            <!-- Logo Oficial Integrado -->
+            <img src="POINTEC APAISADO verde.png" alt="Logo de Pointec" class="h-12">
+            
             <a href="#contacto" class="bg-[#6A994E] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#386641] transition-colors">
                 Contacto
             </a>
@@ -110,18 +109,52 @@
         </div>
     </section>
 
-    <!-- Footer / Contacto con Logo -->
+    <!-- Nuestro Equipo Section -->
+    <section id="equipo" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-[#333333]">Nuestro Equipo</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">El profesionalismo y la experiencia que respaldan cada medición.</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+                <!-- Team Member 1: Gabriel -->
+                <div class="flex items-center gap-6">
+                    <img src="gabriel.jpg" alt="Foto de Gabriel Domper" class="w-28 h-28 rounded-full object-cover flex-shrink-0 border-4 border-gray-200">
+                    <div class="border-l-4 border-[#6A994E] pl-6">
+                        <h4 class="text-xl font-bold text-[#386641]">
+                            <a href="https://www.linkedin.com/in/gabrieldomper/" target="_blank" rel="noopener noreferrer" class="hover:text-[#6A994E] transition-colors">GABRIEL DOMPER</a>
+                        </h4>
+                        <p class="text-gray-600">Gerente de Operaciones</p>
+                        <p class="text-sm text-gray-500 mt-2">MSc. Ing. Agrónomo</p>
+                        <p class="text-sm text-gray-500">MP 03401</p>
+                        <p class="text-sm text-gray-500">+54 9 2923 650638</p>
+                    </div>
+                </div>
+                <!-- Team Member 2: Jorge -->
+                <div class="flex items-center gap-6">
+                     <img src="jorge.jpg" alt="Foto de Jorge Luis Pacioni" class="w-28 h-28 rounded-full object-cover flex-shrink-0 border-4 border-gray-200">
+                     <div class="border-l-4 border-[#6A994E] pl-6">
+                        <h4 class="text-xl font-bold text-[#386641]">JORGE LUIS PACIONI</h4>
+                        <p class="text-gray-600">Socio Gerente</p>
+                        <p class="text-sm text-gray-500 mt-2">+54 9 2923 446475</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
     <footer id="contacto" class="bg-[#333333] text-white py-16">
         <div class="container mx-auto px-6 text-center">
-            <!-- Logo Circular Integrado -->
-            <img src="POINTEC CIRCULAR verde.png" alt="Logo Circular Pointec" class="h-24 w-24 mx-auto mb-8">
             <h3 class="text-3xl font-bold">Conversemos sobre cómo potenciar su campo.</h3>
-            <p class="mt-8 text-lg text-gray-300">
-                <strong>GABRIEL DOMPER</strong><br>
-                Gerente de Operaciones | MSc. Ing. Agr. - MP 03401<br>
-                <a href="tel:+542923650638" class="hover:text-[#A7C957]">+54 2923 650-638</a> | 
-                <a href="mailto:pointec.ambientaciones@gmail.com" class="hover:text-[#A7C957]">pointec.ambientaciones@gmail.com</a><br>
-                Instagram: @pointec_ambientaciones
+            <p class="mt-4 text-lg text-gray-400">Póngase en contacto con nuestro equipo para un asesoramiento personalizado.</p>
+            <div class="mt-8">
+                 <a href="mailto:pointec.ambientaciones@gmail.com" class="bg-[#6A994E] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#386641] transition-colors text-lg">
+                    Enviar un Email
+                </a>
+            </div>
+            <p class="mt-8 text-gray-400">
+                <a href="https://www.instagram.com/pointec_ambientaciones/" target="_blank" rel="noopener noreferrer" class="hover:text-[#A7C957] transition-colors">Instagram: @pointec_ambientaciones</a>
             </p>
         </div>
     </footer>
