@@ -1,163 +1,157 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pointec - Portfolio de Servicios</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- 
-        Palette: Verde Mate (Agro)
-        - Dark Green: #386641
-        - Mid Green: #6A994E
-        - Light Green: #A7C957
-        - Background Gray: #F2F4F3
-        - Text Gray: #333333
-    -->
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .card-service {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-service:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .hero-bg {
-            /* Se usa la imagen local como fondo */
-            background-image: url('20240506_102250.jpg');
-            background-size: cover;
-            /* Ajuste para dar perspectiva vertical y de infinito */
-            background-position: center 75%;
-        }
-    </style>
-</head>
-<body class="bg-white">
+<body class="bg-gray-900 text-white">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Logo Oficial Integrado -->
-            <img src="POINTEC APAISADO verde.png" alt="Logo de Pointec" class="h-12">
-            
-            <a href="#contacto" class="bg-[#6A994E] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#386641] transition-colors">
-                Contacto
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#inicio">
+                <img src="images/pointec_logo_apaisado.png" alt="Logo Pointec" class="h-10">
             </a>
-        </div>
+            <div class="hidden md:flex space-x-6 text-lg">
+                <a href="#proceso" class="text-gray-300 hover:text-green-400 transition">Nuestro Proceso</a>
+                <a href="#equipo" class="text-gray-300 hover:text-green-400 transition">Equipo</a>
+                <a href="https://www.instagram.com/pointec_ambientaciones/" target="_blank" class="text-gray-300 hover:text-green-400 transition">Instagram</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile menu button can be added here -->
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section con Imagen de Fondo -->
-    <section class="hero-bg">
-        <div class="bg-black bg-opacity-50 text-center py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-6xl font-black text-white leading-tight">
-                    Deje de Adivinar.<br><span class="text-[#A7C957]">Empiece a Medir.</span>
-                </h2>
-                <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
-                    En el campo, cada decisión cuenta. Nuestro trabajo es darle la información precisa para que cada una de esas decisiones se traduzca en mayor rentabilidad.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Overview Section -->
-    <section class="py-20 bg-[#F2F4F3]">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h3 class="text-3xl font-bold text-[#333333]">Nuestro Método: Un Viaje a la Rentabilidad</h3>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Guiamos a nuestros clientes a través de un proceso probado de 3 fases que convierte la incertidumbre en un plan de acción concreto.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Fase 1: Diagnóstico -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-service flex flex-col">
-                    <img src="Screenshot_2024-07-30-17-50-52-682_com.ragiant.pique.jpg" alt="Detalle de un pique en la app" class="w-full h-48 object-cover">
-                    <div class="p-8 text-center flex-grow flex flex-col">
-                        <h4 class="text-2xl font-bold text-[#386641] mb-4">Diagnóstico Preciso</h4>
-                        <p class="text-gray-600 flex-grow">
-                            Entendemos el ADN de su campo. Mapeamos las limitantes ocultas como la compactación y la profundidad de la tosca para descubrir su verdadero potencial productivo.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Fase 2: Estrategia -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-service flex flex-col">
-                    <img src="mapa_10C.png" alt="Mapa de ambientes y profundidad" class="w-full h-48 object-cover">
-                    <div class="p-8 text-center flex-grow flex flex-col">
-                        <h4 class="text-2xl font-bold text-[#386641] mb-4">Estrategia Inteligente</h4>
-                        <p class="text-gray-600 flex-grow">
-                            Convertimos los datos en un plan de acción. Creamos mapas de ambientes y "recetas" (prescripciones) para que sus máquinas apliquen la dosis justa en el lugar correcto.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Fase 3: Ejecución -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-service flex flex-col">
-                    <img src="penetrometria_x_10_median.png" alt="Mapas de compactación por capas" class="w-full h-48 object-cover">
-                    <div class="p-8 text-center flex-grow flex flex-col">
-                        <h4 class="text-2xl font-bold text-[#386641] mb-4">Ejecución del Futuro</h4>
-                        <p class="text-gray-600 flex-grow">
-                            Llevamos la precisión al siguiente nivel con tecnología de drones para mapeo de malezas, pulverización y siembras de cobertura, incluso en las condiciones más difíciles.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nuestro Equipo Section -->
-    <section id="equipo" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h3 class="text-3xl font-bold text-[#333333]">Nuestro Equipo</h3>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">El profesionalismo y la experiencia que respaldan cada medición.</p>
-            </div>
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-                <!-- Team Member 1: Gabriel -->
-                <div class="flex items-center gap-6">
-                    <img src="gabriel.jpg" alt="Foto de Gabriel Domper" class="w-28 h-28 rounded-full object-cover flex-shrink-0 border-4 border-gray-200">
-                    <div class="border-l-4 border-[#6A994E] pl-6">
-                        <h4 class="text-xl font-bold text-[#386641]">
-                            <a href="https://www.linkedin.com/in/gabrieldomper/" target="_blank" rel="noopener noreferrer" class="hover:text-[#6A994E] transition-colors">GABRIEL DOMPER</a>
-                        </h4>
-                        <p class="text-gray-600">Gerente de Operaciones</p>
-                        <p class="text-sm text-gray-500 mt-2">MSc. Ing. Agrónomo</p>
-                        <p class="text-sm text-gray-500">MP 03401</p>
-                        <p class="text-sm text-gray-500">+54 9 2923 650638</p>
-                    </div>
-                </div>
-                <!-- Team Member 2: Jorge -->
-                <div class="flex items-center gap-6">
-                     <img src="jorge.jpg" alt="Foto de Jorge Luis Pacioni" class="w-28 h-28 rounded-full object-cover flex-shrink-0 border-4 border-gray-200">
-                     <div class="border-l-4 border-[#6A994E] pl-6">
-                        <h4 class="text-xl font-bold text-[#386641]">JORGE LUIS PACIONI</h4>
-                        <p class="text-gray-600">Socio Gerente</p>
-                        <p class="text-sm text-gray-500 mt-2">+54 9 2923 446475</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contacto -->
-    <footer id="contacto" class="bg-[#333333] text-white py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold">Conversemos sobre cómo potenciar su campo.</h3>
-            <p class="mt-4 text-lg text-gray-400">Póngase en contacto con nuestro equipo para un asesoramiento personalizado.</p>
-            <div class="mt-8">
-                 <a href="mailto:pointec.ambientaciones@gmail.com" class="bg-[#6A994E] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#386641] transition-colors text-lg">
-                    Enviar un Email
-                </a>
-            </div>
-            <p class="mt-8 text-gray-400">
-                <a href="https://www.instagram.com/pointec_ambientaciones/" target="_blank" rel="noopener noreferrer" class="hover:text-[#A7C957] transition-colors">Instagram: @pointec_ambientaciones</a>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg relative min-h-screen flex items-center justify-center text-center -mt-16">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 p-8">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+                <span class="text-green-400">Pointec:</span> Decisiones que Nacen de la Tierra.
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+                Conocemos tu campo en profundidad para que aproveches cada metro cuadrado. Menos insumos, más rinde.
             </p>
+            <a href="#proceso" class="mt-8 inline-block bg-green-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg hover:bg-green-400 transition duration-300">
+                Conoce Nuestro Proceso
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Proceso Section -->
+        <section id="proceso" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-green-400">Nuestro Proceso</h2>
+                    <p class="text-lg text-gray-300 mt-2">De la radiografía del suelo a la aplicación precisa.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Mapeo de Tosca -->
+                    <div class="bg-gray-900 rounded-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <img src="images/mapeo_de_tosca_y_ambiente.jpg" alt="Mapa de ambientes generado por Pointec" class="card-img">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold mb-3">1. Mapeo de Tosca y Ambientes</h3>
+                            <p class="text-gray-400">
+                               Diagnosticamos la profundidad de la tosca con nuestro equipo Tornomar para generar mapas de ambientes que delimitan el potencial productivo de cada zona.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Medición de Compactación -->
+                    <div class="bg-gray-900 rounded-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <img src="images/deteccion_compactacion.jpg" alt="Herramienta para la detección de compactación de suelo" class="card-img">
+                         <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold mb-3">2. Medición de Compactación</h3>
+                            <p class="text-gray-400">
+                               Mediante penetrometría, medimos la resistencia del suelo en diferentes profundidades para detectar y mapear capas compactadas que limitan el crecimiento de raíces.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Prescripciones -->
+                    <div class="bg-gray-900 rounded-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <img src="images/app_prescripciones.jpg" alt="Aplicación móvil para la recolección de datos en campo" class="card-img">
+                         <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold mb-3">3. Prescripciones a Medida</h3>
+                            <p class="text-gray-400">
+                               Traducimos los mapas a prescripciones digitales 100% compatibles con tu maquinaria para la aplicación variable y automática de insumos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Muestreo de Suelos -->
+                    <div class="bg-gray-900 rounded-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <img src="images/muestreo_suelos.jpg" alt="Mano sosteniendo una muestra de suelo" class="card-img">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold mb-3">4. Muestreo de Suelos Inteligente</h3>
+                            <p class="text-gray-400">
+                               Realizamos muestreos dirigidos por ambientes y georreferenciados para un diagnóstico nutricional certero y una fertilización de máxima eficiencia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Mapeo de Malezas con Dron -->
+                    <div class="bg-gray-900 rounded-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <img src="images/deteccion_malezas_dron.jpg" alt="Dron sobrevolando un cultivo de maíz para detectar malezas" class="card-img">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold mb-3">5. Detección de Malezas con Dron</h3>
+                            <p class="text-gray-400">
+                               Identificamos focos de malezas con drones de alta resolución para que realices un control localizado y eficiente con tu pulverizadora de siempre.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Aplicaciones Aéreas -->
+                    <div class="bg-gray-900 rounded-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 flex flex-col">
+                        <img src="https://placehold.co/600x400/16a085/ffffff?text=DJI+Agras" alt="Dron pulverizador DJI Agras" class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/16a085/ffffff?text=DJI+Agras';">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold mb-3">6. Aplicaciones Aéreas de Precisión</h3>
+                            <p class="text-gray-400">
+                               Con equipos DJI Agras realizamos pulverizaciones y siembras de cobertura con precisión quirúrgica, incluso en zonas de difícil acceso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo Section -->
+        <section id="equipo" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-green-400">Nuestro Equipo</h2>
+                    <p class="text-lg text-gray-300 mt-2">Profesionales apasionados por la agricultura de precisión.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-12">
+                    <!-- Jorge Pacioni -->
+                    <div class="text-center">
+                        <img src="images/foto_jorge.jpg" alt="Foto de Jorge Luis Pacioni" class="w-48 h-48 rounded-full mx-auto mb-4 border-4 border-green-500">
+                        <h3 class="text-2xl font-bold">Jorge Luis Pacioni</h3>
+                        <p class="text-green-400 text-lg">Socio Gerente</p>
+                        <p class="text-gray-400 mt-2">+54 9 2923 446475</p>
+                    </div>
+                    <!-- Gabriel Domper -->
+                    <div class="text-center">
+                        <img src="images/foto_gabriel.jpg" alt="Foto de Gabriel Domper" class="w-48 h-48 rounded-full mx-auto mb-4 border-4 border-green-500">
+                        <h3 class="text-2xl font-bold">Gabriel Domper</h3>
+                        <p class="text-green-400 text-lg">Gerente de Operaciones</p>
+                        <p class="text-gray-400 mt-2">Msc. Ing. Agrónomo - MP 03401</p>
+                        <p class="text-gray-400">+54 9 2923 650638</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <img src="images/pointec_logo_circular.png" alt="Logo circular Pointec" class="h-16 mx-auto mb-4">
+            <p>© 2025 Pointec. Todos los derechos reservados.</p>
+            <p class="mt-2">Potenciando la agricultura con tecnología y precisión.</p>
+            <p class="mt-1">Pigüé, Buenos Aires, Argentina</p>
         </div>
     </footer>
 
+
+
 </body>
-</html>
